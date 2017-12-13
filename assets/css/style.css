@@ -12,7 +12,7 @@ body{
 }
 
 #status{
-	font-family: 'Itim', cursive;
+	font-family: 'Caveat', cursive;
 	font-size: 35px;
 	color: #F9C733;
 	width: 90%;
@@ -29,15 +29,24 @@ body{
 	margin: 200px 0 0px 410px;
 }
 
+#second-title{
+	font-family: 'Caveat', cursive;
+}
+
+.cubiertos{
+	width: 200px;
+	height: 200px;
+}
 
 .second-screen{
-	background: #2b2b2b;
+	background: #f6eee2;
 	color: #F9C733;
 	text-align: center;
 }
 
-.division{
-	color: #fff;
+
+.map{
+	background: #f6eee2;
 }
 
 @media screen and (max-width: 900px){
@@ -45,8 +54,20 @@ body{
 	position: absolute;
 	display: block;
 	z-index: 1;
-	margin: 500px 10px 10px 300px;
+	margin: 100px 10px 10px 250px;
 }
+.map{
+	background: #f6eee2;
+}
+}
+
+.food-around{
+	font-family: 'Caveat', cursive;
+	margin: 20px;
+}
+
+.search{
+	font-family: 'Caveat', cursive;
 }
 
 @media screen and (max-width: 600px){
@@ -54,6 +75,15 @@ body{
 	position: absolute;
 	display: block;
 	z-index: 1;
-	margin: 300px 0 0 50px;
+	margin: 100px 0 0 110px;
+}
+}
+
+@media screen and (max-width: 360px){
+	#title{
+	position: absolute;
+	display: block;
+	z-index: 1;
+	margin: 200px 0 0 60px;
 }
 }
