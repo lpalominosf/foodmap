@@ -68,6 +68,19 @@ body{
 
 .search{
 	font-family: 'Caveat', cursive;
+	background: #fff;
+	width: 500px;
+	text-align: left;
+}
+
+.fa-search {
+	float: right;
+}
+
+.food{
+	width: 150px;
+	height: 150px;
+	padding: 1%;
 }
 
 @media screen and (max-width: 600px){
