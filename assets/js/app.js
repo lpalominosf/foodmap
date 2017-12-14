@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('#status').delay(1000).fadeOut('slow');
-	$('#preloader').delay(1000).fadeOut();
+	$('#status').delay(4000).fadeOut('slow');
+	$('#preloader').delay(4000).fadeOut();
 	$('.second-screen').hide();
 
 
@@ -9,7 +9,7 @@ $(document).ready(function(){
 */
   setTimeout(function() {
   $('.second-screen').show();
-  }, 1000);
+  }, 4000);
 
 
 
