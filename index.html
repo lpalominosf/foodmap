@@ -1,136 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>F O O D • M A P</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- Linkeables -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Caveat|Itim|Roboto" rel="stylesheet">
-	<!-- Ícono para la pestaña -->
-	<link rel="icon" href="assets/images/cubiertos.png" type="image/png">
-	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>F O O D • M A P</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Linkeables -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Itim|Roboto" rel="stylesheet">
+  <!-- Ícono para la pestaña -->
+  <link rel="icon" href="assets/images/icon-2073973_960_720.png" type="image/png">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<!-- Preloader -->
-	<div id="preloader" class="container-fluid">
-		<div class="row">
-			<div class="container">
-				<div class="col-xs-12 col-md-12 col-lg-12" id="status">
-					<!-- Aquí va el preloader -->
-					<p id="title">F O O D • M A P</p>
-				</div>
-			</div>
-		</div>
-	</div>
 
-
-	<!-- Segunda pantalla -->
-	<div class="row">
-		<div class=" second-screen container">
-			<div class="col-xs-12 col-md-12 col-lg-12">
-				<h1 id="second-title">F O O D • M A P </h1>
-				<img class="cubiertos" src="assets/images/cubiertos.png" alt="">
-			</div>
-			<div class="row">
-				<div class="container">
-					<div class="col-xs-12 col-md-12 col-lg-12">
-						<hr>
-					</div>
-				</div>
-			</div>
-			<!-- Mapa -->
-			<div class="row">
-				<div class="col-xs-12 col-md-12 col-lg-12">
-					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425996.59945013665!2d-70.62983129999999!3d-33.47278794999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1513167537230" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-			</div>
-			<!-- Menú -->
-			<div class="food-images row">
-				<div class="column col-xs-12 col-md-12 col-lg-12">
-					<h4 id="second-title">Comida cerca de ti</h4>
-					<div id="myBtnContainer">
-  					<button class="btn active" onclick="filterSelection('all')"> Mostrar todo</button>
-  					<button class="btn" onclick="filterSelection('chinese')"> China</button>
-  					<button class="btn" onclick="filterSelection('japanese')"> Japonesa</button>
-  					<button class="btn" onclick="filterSelection('thai')"> Tailandesa</button>
-					</div>
-					<!-- Galeria de imágenes (comidas) para elegir -->
-					<!-- Comida China -->
-						<div class="row">
-  						<div class="column chinese">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/chow mein.jpeg" alt="Chow Mein" style="width:50%">
-      						<h4>Chow Mein</h4>
-      						<p>Fideos chinos fritos con pollo...</p>
-    						</div>
-  						</div>
-  						<div class="column chinese">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/pato pekines.jpg" alt="Pato a la pekinesa" style="width:50%">
-      						<h4>Pato a la Pekinesa</h4>
-      						<p>Pato frito asado...</p>
-    						</div>
-  						</div>
-  						<div class="column chinese">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/tofu-picante.jpg" alt="Mapo Doufu" style="width:50%">
-      						<h4>Mapo Doufu</h4>
-      						<p>Tofu en salsa picante de guindilla y judía...</p>
-    						</div>
-  						</div>
-  						<!-- Comida Japonesa -->
-  						<div class="column japanese">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/sashimi.jpg" alt="Sashimi" style="width:50%">
-      						<h4>Sashimi</h4>
-      						<p>Mariscos crudos servidos con salsa de soja y wasabi...</p>
-    						</div>
-  						</div>
-  						<div class="column japanese">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/soba.jpg" alt="Soba" style="width:50%">
-      						<h4>Soba</h4>
-      						<p>Fideos finos elaborados con harina de alforfón...</p>
-    						</div>
-  						</div>
-  						<div class="column japanese">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/teriyaki.jpg" alt="Teriyaki" style="width:50%">
-      						<h4>Teriyaki</h4>
-      						<p>Alimentos (pescado o carne) asados en un adobo de salsa dulce...</p>
-    						</div>
-  						</div>
-  						<!-- Comida Tailandesa -->
-  						<div class="column thai">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/Pad Thai.jpg" alt="Pad Thai" style="width:50%">
-      						<h4>Pad Thai</h4>
-      						<p>Salteado en wok con fideos de arroz con huevo, salsa de pescado, tamarindo, pimiento rojo, y distintas combinaciones...</p>
-    						</div>
-  						</div>
-  						<div class="column thai">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/Nám tok.jpg" alt="Nám tok" style="width:50%">
-      						<h4>Nám Tok</h4>
-      						<p>Carne de vacuno cortada en rodajas, servida en sopa o un tipo de ensalada, acompañada con especias...</p>
-    						</div>
-  						</div>
-  						<div class="column thai">
-    						<div class="content">
-      						<img class="food-images" src="assets/images/Gaeng kiew wan.jpg" alt="Gaeng kiew wan" style="width:50%">
-      						<h4>Gaeng Kiew Wan (curry verde tailandés)</h4>
-      						<p>Leche de coco, hojas de lima kaffir, galangal, picante, combinados con pollo, pescado, o carne vacuna, además de cebolla, salsa de pescado, y otros condimentos...</p>
-    						</div>
-  						</div>
-					</div>
-				</div>
-
-
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="assets/js/app.js"></script>
+<!-- Preloader -->
+  <div id="preloader" class="container-fluid">
+    <div class="row">
+      <div class="container-fluid">
+        <div class="col-xs-12 col-md-12 col-lg-12" id="status">
+          <!-- Aquí va el preloader -->
+          <p id="title">F O O D • M A P</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class=" second-screen container-fluid">
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        <h1 id="second-title">F O O D • M A P </h1>
+        <img class="cubiertos" src="assets/images/cubiertos.png" alt="">
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mapa -->
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425996.59945013665!2d-70.62983129999999!3d-33.47278794999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1513167537230" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Mostrar todo</button>
+        <button class="btn" onclick="filterSelection('chinese')"> China</button>
+        <button class="btn" onclick="filterSelection('japanese')"> Japonesa</button>
+        <button class="btn" onclick="filterSelection('thai')"> Tailandesa</button>
+      </div>
+      
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        <!-- Galeria de imágenes (comidas) para elegir -->
+          <!-- Comida China -->
+            <div class="row">
+              <div class="column chinese">
+                <div class="content">
+                  <img class="food-images" src="assets/images/chow mein.jpg" alt="Chow Mein" style="width:100%">
+                  <h5>Chow Mein</h5>
+                </div>
+              </div>
+            <div class="column chinese">
+                <div class="content">
+                  <img class="food-images" src="assets/images/pato pekines.jpg" alt="Pato a la pekinesa" style="width:100%">
+                  <h5>Pato a la Pekinesa</h5>
+                </div>
+              </div>
+              <div class="column chinese">
+                <div class="content">
+                  <img class="food-images" src="assets/images/tofu-picante.jpg" alt="Mapo Doufu" style="width:100%">
+                  <h5>Mapo Doufu</h5>
+                </div>
+              </div>
+              <!-- Comida Japonesa -->
+              <div class="column japanese">
+                <div class="content">
+                  <img class="food-images" src="assets/images/sashimi.jpg" alt="Sashimi" style="width:100%">
+                  <h5>Sashimi</h5>
+                </div>
+              </div>
+              <div class="column japanese">
+                <div class="content">
+                  <img class="food-images" src="assets/images/soba.jpg" alt="Soba" style="width:100%">
+                  <h5>Soba</h5>
+                </div>
+              </div>
+              <div class="column japanese">
+                <div class="content">
+                  <img class="food-images" src="assets/images/teriyaki.jpg" alt="Teriyaki" style="width:100%">
+                  <h5>Teriyaki</h5>
+                </div>
+              </div>
+              <!-- Comida Tailandesa -->
+              <div class="column thai">
+                <div class="content">
+                  <img class="food-images" src="assets/images/Pad Thai.jpg" alt="Pad Thai" style="width:100%">
+                  <h5>Pad Thai</h5>
+                </div>
+              </div>
+              <div class="column thai">
+                <div class="content">
+                  <img class="food-images" src="assets/images/Nám tok.jpg" alt="Nám tok" style="width:100%">
+                  <h5>Nám Tok</h5>
+                </div>
+              </div>
+              <div class="column thai">
+                <div class="content">
+                  <img class="food-images" src="assets/images/Gaeng kiew wan.jpg" alt="Gaeng kiew wan" style="width:100%">
+                  <h5>Gaeng Kiew Wan</h5>
+                </div>
+              </div>
+          
+        </div>
+      </div>
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
