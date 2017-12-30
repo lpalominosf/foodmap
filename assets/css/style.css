@@ -19,8 +19,13 @@ h1{
   word-break: break-all;
 }
 
+.preloader{
+  margin-top: 50%;
+  margin-left: 20%;
+}
+
 /* 
-*Enmarca las fotos con un cuadro blanco 
+*Enmarca las fotos con un cuadro blanco
 */
 .content{
   background-color: white;

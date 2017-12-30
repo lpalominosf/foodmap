@@ -82,7 +82,7 @@ $("#chinese-btn").click(function(){
     $("#modal1").show();
     $(".modal-content").append("<span class='glyphicon glyphicon-remove' aria-hidden='true' id='close'></span>"+
                               "<div class='row'><h1 id='titlemodal' class='text-center'>Hao Hwa</h1></div>"+
-                              "<div class='row' id='mapmodal'><iframe class='col-xs-12 text-center' src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13317.629073157572!2d-70.63952465!3d-33.438694399999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1514586598620' width='300' height='200' frameborder='0' style='border:0' allowfullscreen></iframe>"+
+                              "<div class='row' id='mapmodal'><iframe class='col-xs-12 text-center' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53247.633369723146!2d-70.68569774238934!3d-33.47594735191166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59857c39003%3A0x12400b89665ea33e!2sRestaurante+Hao+Hwa!5e0!3m2!1ses!2scl!4v1514663553074' width='300' height='200' frameborder='0' style='border:0' allowfullscreen></iframe>"+
                               "<div class='row'><p class='text-center col-xs-10 col-xs-offset-1' id='addressmodal'>Monjitas 386, Santiago, Región Metropolitana</p></div>" +
                               "<div class='row'><button id='btnmodal' class='btn btn-pedir btn-default col-xs-4 col-xs-offset-4'>Pedir</button></div")
 });
@@ -90,7 +90,7 @@ $("#chinese-btn").click(function(){
     $("#modal1").show();
     $(".modal-content").append("<span class='glyphicon glyphicon-remove' aria-hidden='true' id='close'></span>"+
                               "<div class='row'><h1 id='titlemodal' class='text-center'>Hao Hwa</h1></div>"+
-                              "<div class='row' id='mapmodal'><iframe class='col-xs-12 text-center' src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13317.629073157572!2d-70.63952465!3d-33.438694399999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1514586598620' width='300' height='200' frameborder='0' style='border:0' allowfullscreen></iframe>"+
+                              "<div class='row' id='mapmodal'><iframe class='col-xs-12 text-center' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53247.633369723146!2d-70.68569774238934!3d-33.47594735191166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59857c39003%3A0x12400b89665ea33e!2sRestaurante+Hao+Hwa!5e0!3m2!1ses!2scl!4v1514663553074' width='300' height='200' frameborder='0' style='border:0' allowfullscreen></iframe>"+
                               "<div class='row'><p class='text-center col-xs-10 col-xs-offset-1' id='addressmodal'>Monjitas 386, Santiago, Región Metropolitana</p></div>" +
                               "<div class='row'><button id='btnmodal' class='btn btn-pedir btn-default col-xs-4 col-xs-offset-4'>Pedir</button></div")
 });
@@ -98,18 +98,11 @@ $("#chinese-btn").click(function(){
     $("#modal1").show();
     $(".modal-content").append("<span class='glyphicon glyphicon-remove' aria-hidden='true' id='close'></span>"+
                               "<div class='row'><h1 id='titlemodal' class='text-center'>Hao Hwa</h1></div>"+
-                              "<div class='row' id='mapmodal'><iframe class='col-xs-12 text-center' src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13317.629073157572!2d-70.63952465!3d-33.438694399999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1514586598620' width='300' height='200' frameborder='0' style='border:0' allowfullscreen></iframe>"+
+                              "<div class='row' id='mapmodal'><iframe class='col-xs-12 text-center' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53247.633369723146!2d-70.68569774238934!3d-33.47594735191166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59857c39003%3A0x12400b89665ea33e!2sRestaurante+Hao+Hwa!5e0!3m2!1ses!2scl!4v1514663553074' width='300' height='200' frameborder='0' style='border:0' allowfullscreen></iframe>"+
                               "<div class='row'><p class='text-center col-xs-10 col-xs-offset-1' id='addressmodal'>Monjitas 386, Santiago, Región Metropolitana</p></div>" +
                               "<div class='row'><button id='btnmodal' class='btn btn-pedir btn-default col-xs-4 col-xs-offset-4'>Pedir</button></div")
 });
 });
-/*
-*Función que cierra el modal
-*/
-$('#close').click(function() {
-    $(this).parent().hide();
-    $(".modal-content").empty();
-  });
 
 $("#japanese-btn").click(function(){
     $("#food4").click(function(){
@@ -165,4 +158,16 @@ $("#thai-btn").click(function(){
 });
 });
 
+/*
+*Función que cierra el modal
+*/
+$('.glyphicon-remove').click(function() {
+    $('.glyphicon-remove').hide();
+    $(".modal-content").empty();
+  });
+
 }
+
+
+
+/*Falta corregir el botón de cierre y el modal que se ve cuatro veces*/
