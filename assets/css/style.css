@@ -1,36 +1,91 @@
-* {
+*{
     box-sizing: border-box;
 }
 /*
 Estilo general
 */
-body {
-    background-color: #1E1E1E;
-    padding: 20px;
-    font-family: 'Caveat', cursive;
+body{
+  background-color: #1E1E1E;
+  padding: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
 }
 
 /*
 Estilos del h1
 */
-h1 {
-    font-size: 40px;
-    word-break: break-all;
+h1{
+  font-size: 40px;
+  word-break: break-all;
 }
 
 /* 
 *Enmarca las fotos con un cuadro blanco 
 */
-.content {
-    background-color: white;
-    padding: 10px;
+.content{
+  background-color: white;
+  padding: 10px;
 }
 
 /*
 *Hover manual para los botones
 */
-.btn:hover, .active {
+.btn:hover, .active{
   background-color: #ddd;
+}
+
+/*
+*Modales
+*/
+.modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 0;
+  width: 55%;
+  margin: auto;
+  overflow-y: auto;
+  border-radius: 2px;
+  will-change: top, opacity;
+  padding-top: 5%;
+}
+
+.modal .modal-content{
+  padding: 24px;
+  background-color: #F5F5DC
+}
+
+
+.modal.modal-fixed-footer .modal-content{
+  position: absolute;
+  height: calc(100% - 56px);
+  max-height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+#close{
+  text-align: right;
+  color: #000;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+#titlemodal{
+  color: #d77419;
+}
+
+#phonemodal{
+  text-align: center;
+}
+
+#btnmodal{
+  background-color: #d77419;
+  color: #fff;
+  font-size: 20px;
 }
 
 /*
@@ -161,6 +216,8 @@ h1 {
   background-color: #ddd;
 }
 
+
+
 /*
 *Pantallas hasta los 900px
 */
@@ -170,10 +227,14 @@ h1 {
 	display: block;
 	z-index: 1;
 	margin: 100px 10px 10px 250px;
-}
+  }
 .map{
 	background: #f6eee2;
-}
+  }
+
+.modal {
+  width: 80%;
+  }
 }
 
 /*
@@ -186,6 +247,9 @@ h1 {
 	z-index: 1;
 	margin: 100px 0 0 110px;
 }
+.modal {
+  width: 80%;
+  }
 }
 
 /*
@@ -198,13 +262,16 @@ h1 {
 	z-index: 1;
 	margin: 200px 0 0 60px;
 }
+.modal {
+  width: 80%;
+  }
 
 }
 
 /*
 *Pantallas hasta los 320px
 */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
 	#title{
 	position: absolute;
 	display: block;
@@ -214,6 +281,12 @@ h1 {
 
 .map{
 	background: #f6eee2;
-	margin-right:50px;
+	margin-right: 45px;
 }
+
+.modal {
+  width: 80%;
+  text-align: center;
+  }
+
 }
