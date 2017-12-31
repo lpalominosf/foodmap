@@ -72,8 +72,7 @@ function filterSelection(c) {
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
     });
-
-
+}
 /*
 *Esta función llama a cada comida y muestra un mapa con la ubicación del restaurante del tipo de comida recomendado
 */
@@ -86,9 +85,9 @@ function filterSelection(c) {
                               "<div class='row'><p class='text-center col-xs-10 col-xs-offset-1' id='addressmodal'>Monjitas 386, Santiago, Región Metropolitana</p></div>" +
                               "<div class='row'><button id='btnmodal' class='btn btn-pedir btn-default col-xs-4 col-xs-offset-4'>Pedir Ahora!</button></div")
   });
-    
+
     /*
-*Función que cierra el modal
+*Función que cierra el modal // no funciona
 */
 $('#close').click(function() {
     $(this).parent().hide();
@@ -117,7 +116,10 @@ $('#close').click(function() {
                               "<div class='row'><button id='btnmodal' class='btn btn-pedir btn-default col-xs-4 col-xs-offset-4'>Pedir Ahora!</button></div")
     });
   });
-}
+
+$("#food1").mouseover(function(){
+  $("food1").val("hola");
+});
 
 
 
